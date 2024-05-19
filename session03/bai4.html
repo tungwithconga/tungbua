@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function allNumbersDivisibleBy(arr, a) {
+        for (let number of arr) {
+            if (number % a !== 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+    
+    const array1 = [4, 8, 12, 16];
+    const a1 = 4;
+    console.log(allNumbersDivisibleBy(array1, a1)); 
+    
+    const array2 = [5, 10, 15, 20];
+    const a2 = 7;
+    console.log(allNumbersDivisibleBy(array2, a2));
+    </script>
+</body>
+</html>

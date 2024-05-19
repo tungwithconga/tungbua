@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let acc =[
+            {
+                name: "minh",
+                password:"123415",
+                address:"ha noi"
+            },
+            {
+                name: "thanh",
+                password:"123525",
+                address:"ninh binh"
+            },
+            {
+                name: "hai",
+                password:"123123",
+                address:"ha noi"
+            }
+        ]    
+        let found = acc.some(function(item){
+            return item.address === "ninh binh";
+        });
+        if(found){
+            console.log("Co nguoi o ninh binh");
+        }else{
+            console.log("Khong co nguoi ");
+        }
+    </script>
+</body>
+</html>

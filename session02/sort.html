@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let std=[
+            {
+                name:"hoa",
+                id:13,
+            },
+            {
+                name:"thu an",
+                id:12,
+            },
+            {
+                name:"binh",
+                id:111,
+            },
+            {
+                name:"khanh",
+                id:11,
+            },
+            
+           
+        ];
+       let sortStd = std.sort((a,b) => {
+        if (a.name > b.name){
+            return 11
+        }else if (a.name < b.name){
+            return -11
+        }else
+        { return 0 };
+       });
+    </script>
+</body>
+</html>

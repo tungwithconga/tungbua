@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [5,8,9];
+        //Kiem tra xem trong mang numbers co phan tu nao lon hon 6 hay khong
+        let result = numbers.some((item,index,array)=>{
+            return item>6;
+        })
+        console.log(result);
+    </script>
+</body>
+</html>

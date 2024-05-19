@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let students = [
+    { id: 1, name: "Khang" },
+    { id: 2, name: "Tung" },
+    { id: 3, name: "My" }
+];
+
+function sinhVien(students) {
+    students.forEach(student => {
+        console.log(`Hello, ${student.name}! id cua ban la ${student.id}.`);
+    });
+}
+
+sinhVien(students);
+
+    </script>
+</body>
+</html>

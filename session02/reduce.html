@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        reduce:Tinh toan
+        Thường thì for thường : code dài hơn
+        
+        */
+    //   dùng for thường tính tính tổng tất cả trong mảng number
+       
+       let numbers=[1,2,3,4];
+        let sum = 0;//initial giá trị khởi tạo
+        for (let j = 0; j < numbers.length; j++){
+           
+            sum += numbers[j];//Gắn giá trị
+        }
+        console.log(sum);
+        /*
+        accumulator:biến tích lũy
+        */
+       let total = numbers.reduce((accumulator,currentValue,array)=>{
+        return accumulator + currentValue;
+       },0);
+       console.log(total);
+       let carts=[
+        {
+            name:"iphone5",
+            price:100,
+            quantity:1
+        },
+        {
+            name:"iphone6",
+            price:200,
+            quantity:2
+        },
+        {
+            name:"iphone7",
+            price:300,
+            quantity:3
+        }
+    
+       ];
+       let totalPrice = carts.reduce((accumulator,currentValue)=>{
+        return accumulator + currentValue.price * currentValue.quantity;
+       },0);
+       console.log(totalPrice);
+       
+       
+    </script>
+</body>
+</html>
